@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imersão Dev Alura - Aula 03</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript" src="js/scripts.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="page-title">
+                Mentalista
+            </h1>>
+            
+            <div id="select-container">
+                <label for="nivel">Nível de Dificuldade:</label>
+                <select id="nivel" onchange="configurarNivel()">
+                    <option value="">Escolha o nível</option>
+                    <option value="facil">Fácil</option>
+                    <option value="medio">Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+            </div>
+           
+            <div id="jogo-container" style="display: none;">
+                <p class="page-subtitle" id="instrucoes"></p>
+                <input type="number" id="valor" autocomplete="off" /><br>
+                <button type="submit" id="chutar" onclick="Chutar()">Chutar</button>
+            </div>
+            <button class="reiniciar-button" id="reiniciar" onclick="reiniciarJogo()" style="display: none;">Reiniciar</button>
+
+            <h2 class="resultado" id="resultado"></h2>
+        </div>
+    </body>
+</html>
+
+
