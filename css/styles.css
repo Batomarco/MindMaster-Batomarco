@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat;
 }
 
+h2 {
+    color: white;
+}
+
 .container {
     text-align: center;
     padding: 20px;
